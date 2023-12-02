@@ -165,13 +165,21 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-signup" name="contact" method="POST" data-netlify="true" id="contactForm">
+                        <form name="form-testing" method="post" class="needs-validation" novalidate netlify>
     <!-- Full name input -->
     <div class="row input-group-newsletter">
         <div class="col">
+          <label for="firstName">First name</label>
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Entrez votre nom complet..." value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+    <!-- <div class="row input-group-newsletter">
+        <div class="col">
             <input class="form-control" name="fullName" type="text" placeholder="Entrez votre nom complet..." required />
         </div>
-    </div>
+    </div> -->
 
     <!-- Email address and Phone number inputs -->
     <div class="row input-group-newsletter">
