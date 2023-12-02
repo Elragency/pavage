@@ -165,15 +165,11 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-signup" form name="contact" netlify id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <!-- <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Entrer votre courriel..." aria-label="Entrer votre courriel..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Envoyer!</button></div>
-                            </div> -->
+                        <form class="form-signup" name="contact" method="POST" data-netlify="true" id="contactForm">
+                            <!-- Full name input -->
                             <div class="row input-group-newsletter">
                                 <div class="col">
-                                    <input class="form-control" id="fullName" type="text" placeholder="Entrez votre nom complet..." required />
+                                    <input class="form-control" name="fullName" type="text" placeholder="Entrez votre nom complet..." required />
                                 </div>
                             </div>
                         
@@ -181,44 +177,46 @@
                             <div class="row input-group-newsletter">
                                 <!-- Email address input -->
                                 <div class="col">
-                                    <input class="form-control" id="emailAddress" type="email" placeholder="Entrer votre courriel..." required />
+                                    <input class="form-control" name="email" type="email" placeholder="Entrer votre courriel..." required />
                                 </div>
                                 <!-- Phone number input -->
                                 <div class="col">
-                                    <input class="form-control" id="phoneNumber" type="tel" placeholder="Votre numéro de téléphone..." required />
+                                    <input class="form-control" name="phoneNumber" type="tel" placeholder="Votre numéro de téléphone..." required />
                                 </div>
                             </div>
                         
                             <!-- Message input -->
                             <div class="row input-group-newsletter">
                                 <div class="col">
-                                    <textarea class="form-control" id="message" placeholder="Entrez votre message..." required></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Entrez votre message..." required></textarea>
                                 </div>
                             </div>
                         
                             <!-- Submit button -->
                             <div class="row input-group-newsletter">
                                 <div class="col-auto">
-                                    <button class="btn btn-primary" id="submitButton" type="submit">Envoyer!</button>
+                                    <button class="btn btn-primary" type="submit">Envoyer!</button>
                                 </div>
                             </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">Un courriel est requis</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Le courriel n'est pas valide.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+                            <!-- Feedback messages -->
+                            <div class="invalid-feedback mt-2" data-sb-feedback="email:required">Un courriel est requis</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Le courriel n'est pas valide.</div>
+                        
+                            <!-- Hidden input for Netlify -->
+                            <input type="hidden" name="form-name" value="contact" />
+                        
+                            <!-- Submit success message -->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
                                     <div class="fw-bolder">Nous avons bien reçu votre demande, nous vous revenons dans les plus brefs délais!</div>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Une erreur est survenue, veuillez réessayer plus tard!</div></div>
+                            <!-- Submit error message -->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3 mt-2">Une erreur est survenue, veuillez réessayer plus tard!</div>
+                            </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
