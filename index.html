@@ -158,132 +158,63 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Parlez-nous de vos projets!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
                         <form name="form-testing" method="post" class="needs-validation" novalidate netlify>
-    <!-- Full name input -->
-    <div class="row input-group-newsletter">
-        <div class="col">
-          <label for="firstName">First name</label>
-          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Entrez votre nom complet..." value="" required>
-          <div class="invalid-feedback">
-            Valid first name is required.
-          </div>
-        </div>
-    <!-- <div class="row input-group-newsletter">
-        <div class="col">
-            <input class="form-control" name="fullName" type="text" placeholder="Entrez votre nom complet..." required />
-        </div>
-    </div> -->
-
-    <!-- Email address and Phone number inputs -->
-    <div class="row input-group-newsletter">
-        <!-- Email address input -->
-        <div class="col">
-            <input class="form-control" name="email" type="email" placeholder="Entrer votre courriel..." required />
-        </div>
-        <!-- Phone number input -->
-        <div class="col">
-            <input class="form-control" name="phoneNumber" type="tel" placeholder="Votre numéro de téléphone..." required />
-        </div>
-    </div>
-
-    <!-- Message input -->
-    <div class="row input-group-newsletter">
-        <div class="col">
-            <textarea class="form-control" name="message" placeholder="Entrez votre message..." required></textarea>
-        </div>
-    </div>
-
-    <!-- Submit button -->
-    <div class="row input-group-newsletter">
-        <div class="col-auto">
-            <button class="btn btn-primary" type="submit">Envoyer!</button>
-        </div>
-    </div>
-    <!-- Feedback messages -->
-    <div class="invalid-feedback mt-2" data-sb-feedback="email:required">Un courriel est requis</div>
-    <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Le courriel n'est pas valide.</div>
-
-    <!-- Hidden input for Netlify -->
-    <input type="hidden" name="form-name" value="contact" />
-
-    <!-- Submit success message -->
-    <div class="d-none" id="submitSuccessMessage">
-        <div class="text-center mb-3 mt-2 text-white">
-            <div class="fw-bolder">Nous avons bien reçu votre demande, nous vous revenons dans les plus brefs délais!</div>
-        </div>
-    </div>
-    <!-- Submit error message -->
-    <div class="d-none" id="submitErrorMessage">
-        <div class="text-center text-danger mb-3 mt-2">Une erreur est survenue, veuillez réessayer plus tard!</div>
-    </div>
-</form>
-                        
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                  Un nom valide est requis.
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="lastName">Nom de Famille</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Un nom valide est requis.
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="email">Courriel <span class="text-muted"></span></label>
+                              <input type="email" class="form-control" name="Email" id="email" placeholder="you@example.com">
+                              <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                              </div>
+                            </div>
+                
+                            <div class="mb-3">
+                              <label for="address">Adresse</label>
+                              <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" required>
+                              <div class="invalid-feedback">
+                                Please enter your shipping address.
+                              </div>
+                            </div>
+                            <hr class="mb-4">
+                
+                            <h4 class="mb-3">Joindre un fichier</h4>
+                
+                            <div class="input-group mb-3">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02">Choisir un Fichier</label>
+                              </div>
+                              <div class="input-group-append">
+                                <span class="input-group-text" id="">Téléverser</span>
+                              </div>
+                            </div>
+                            <div netlify-recaptcha></div>
+                
+                            <hr class="mb-4">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">ENVOYER</button>
+                          </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <form name="form-testing" method="post" class="needs-validation" novalidate netlify>
 
-            <h4 class="mb-3">Billing address</h4>
-
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="email">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" name="Email" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="address">Address</label>
-              <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-            <hr class="mb-4">
-
-            <h4 class="mb-3">File upload</h4>
-
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
-                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-              </div>
-              <div class="input-group-append">
-                <span class="input-group-text" id="">Upload</span>
-              </div>
-            </div>
-            <div netlify-recaptcha></div>
-
-            <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
-          </form>
 
         <!-- Contact-->
         <section class="contact-section bg-black services">
