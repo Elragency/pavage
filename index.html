@@ -175,23 +175,30 @@
                                 </div>
                               </div>
                             </div>
-                
-                            <div class="mb-3">
-                              <label for="email">Courriel <span class="text-muted"></span></label>
-                              <input type="email" class="form-control" name="Email" id="email" placeholder="you@example.com">
-                              <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
-                              </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Courriel <span class="text-muted"></span></label>
+                                    <input type="email" class="form-control" name="Email" id="email" placeholder="you@example.com">
+                                    <div class="invalid-feedback">
+                                      Please enter a valid email address for shipping updates.
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="address">Adresse</label>
+                                    <input type="textarea" class="form-control" name="address" id="address" placeholder="1234 Main St" required>
+                                    <div class="invalid-feedback">
+                                      Please enter your shipping address.
+                                    </div>
+                                  </div>
                             </div>
-                
                             <div class="mb-3">
-                              <label for="address">Adresse</label>
-                              <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" required>
-                              <div class="invalid-feedback">
-                                Please enter your shipping address.
+                                <label for="text">Comment Pouvons-nous vous aider</label>
+                                <textarea class="form-control" name="sujet" id="sujet" placeholder="Parlez-nous de vos projets" required></textarea>
+                                <div class="invalid-feedback">
+                                  Please enter your shipping address.
+                                </div>
                               </div>
-                            </div>
-                            <hr class="mb-4">
+
                 
                             <h4 class="mb-3">Joindre un fichier</h4>
                 
@@ -200,11 +207,8 @@
                                 <input type="file" class="custom-file-input" name="inputGroupFile02" id="inputGroupFile02">
                                 <label class="custom-file-label" for="inputGroupFile02">Choisir un Fichier</label>
                               </div>
-                              <div class="input-group-append">
-                                <span class="input-group-text" id="">Téléverser</span>
-                              </div>
                             </div>
-                            <div netlify-recaptcha></div>
+                            <!-- <div netlify-recaptcha></div> -->
                 
                             <hr class="mb-4">
                             <button class="btn btn-primary btn-lg btn-block" type="submit">ENVOYER</button>
