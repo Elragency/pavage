@@ -2866,6 +2866,39 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #000;
 }
 
+.main-btn {
+  --bs-btn-padding-x: 1rem !important;
+  --bs-btn-padding-y: 0.75rem !important;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1.25rem !important;
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #000000 !important;
+  --bs-btn-border-color: #000 !important;
+  --bs-btn-hover-color: #fff !important;
+  background: #000 !important;
+}
+.main-btn2 {
+  --bs-btn-padding-x: 0.5rem !important;
+  --bs-btn-padding-y: 0.2rem !important;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1.25rem !important;
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #000000 !important;
+  --bs-btn-border-color: #000 !important;
+  --bs-btn-hover-color: #fff !important;
+  background: #c10000 !important;
+
+}
+
+.btn-quote {
+  
+}
+
+
+
+
 .btn-secondary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #7464a1;
@@ -11023,7 +11056,7 @@ body {
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1rem;
     color: #fff;
   }
   #mainNav .nav-link:hover {
