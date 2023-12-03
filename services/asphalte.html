@@ -32,19 +32,32 @@
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">PAVAGE JONATHAN</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
+                        
+                        <!-- Dropdown for Services -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#service1">Service 1</a></li>
+                                <li><a class="dropdown-item" href="#service2">Service 2</a></li>
+                                <li><a class="dropdown-item" href="#service3">Service 3</a></li>
+                                <!-- More services can be added here -->
+                            </ul>
+                        </li>
+                        
                         <li class="nav-item"><a class="nav-link" href="#realisations">Réalisations</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
@@ -360,7 +373,7 @@
         <!-- VENDOR Main JS File -->
         <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
