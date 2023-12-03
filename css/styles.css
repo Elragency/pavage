@@ -2879,6 +2879,22 @@ textarea.form-control-lg {
   background: #000 !important;
   border-top: 20px;
 }
+
+.service-btn {
+  --bs-btn-padding-x: 1rem !important;
+  --bs-btn-padding-y: 0.75rem !important;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1.25rem !important;
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #000000 !important;
+  --bs-btn-bg: #ffffff !important;
+  --bs-btn-border-color: #000 !important;
+  --bs-btn-hover-color: #636363 !important;
+  background: #ffffff !important;
+  border-top: 20px;
+}
+
+
 .main-btn2 {
   --bs-btn-padding-x: 0.5rem !important;
   --bs-btn-padding-y: 0.2rem !important;
