@@ -260,15 +260,3 @@
   new PureCounter();
 
 })()
-
-document.addEventListener('DOMContentLoaded', function() {
-  var storyblokApi = 'https://api.storyblok.com/v2/cdn/stories/https://60013ecb.me.storyblok.com/tokenSgtQ15MdrMpRV1T78T277Att&version=published';
-
-  fetch(storyblokApi)
-      .then(response => response.json())
-      .then(data => {
-          var storyContent = data.story.content; // Adjust this based on your content structure
-          document.getElementById('storyblok-content').innerHTML = storyContent; // Display content
-      })
-      .catch(error => console.error('Error:', error));
-});
